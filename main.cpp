@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 void getLengthWidth(double& length, double& width) {
@@ -24,10 +25,12 @@ void getLengthWidth(double& length, double& width) {
 }
 
 double calcPerimeter(double length, double width);
+{
+    double perimeter = 2 * (length + width);
+}
+
 double calcArea(double length, double width);
 void displayProperties(double perimeter, double area);
-
-double length, width, perimeter, area;
 
 int main() {
 
