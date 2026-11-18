@@ -30,6 +30,9 @@ double calcPerimeter(double length, double width);
 }
 
 double calcArea(double length, double width);
+{
+    double area = length * width;
+}
 void displayProperties(double perimeter, double area);
 
 int main() {
