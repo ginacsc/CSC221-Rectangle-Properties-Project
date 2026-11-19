@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//This function obtains the length and width from the user and validates the measurements.
 void getLengthWidth(double& length, double& width) {
     do {
         cout << "Enter the length: ";
@@ -23,23 +24,30 @@ void getLengthWidth(double& length, double& width) {
 
 }
 
+//This function calculates the perimeter of the rectangle and returns the value to main. Its
+//inputs are length and width. Its output is perimeter.
 double calcPerimeter(double length, double width)
 {
     double perimeter = 2 * (length + width);
     return perimeter;
 }
 
+//This function calculates the area of the rectangle and returns the value to main. Its inputs
+//are length and width. Its output is area.
 double calcArea(double length, double width)
 {
     double area = length * width;
     return area;
 }
+//This function displays the perimeter and the area of the rectangle. Its inputs are perimeter and
+//area and its outputs are perimeter and area.
 void displayProperties(double perimeter, double area)
 {
     cout << "The perimeter is: " << perimeter << endl;
     cout << "The area is: " << area << endl;
 }
 
+//This function coordinates the previous functions and tells them to execute.
 int main() {
     double length, width, perimeter, area;
     int choice;
