@@ -24,21 +24,23 @@ void getLengthWidth(double& length, double& width) {
 
 }
 
-double calcPerimeter(double length, double width);
+double calcPerimeter(double length, double width)
 {
     double perimeter = 2 * (length + width);
 }
 
-double calcArea(double length, double width);
+double calcArea(double length, double width)
 {
     double area = length * width;
 }
-void displayProperties(double perimeter, double area);
+void displayProperties(double perimeter, double area)
+{
+    cout << "The perimeter is: " << perimeter << endl;
+    cout << "The area is: " << area << endl;
+}
 
 int main() {
-
-    getLengthWidth(length, width);
-
+    double length, width, perimeter, area;
 
     return 0;
 
