@@ -42,6 +42,14 @@ void displayProperties(double perimeter, double area)
 int main() {
     double length, width, perimeter, area;
 
+    getLengthWidth(length, width);
+
+    perimeter = calcPerimeter(length, width);
+
+    area = calcArea(length, width);
+
+    displayProperties(perimeter, area);
+
     return 0;
 
 }
