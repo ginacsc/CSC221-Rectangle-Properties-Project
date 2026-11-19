@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 void getLengthWidth(double& length, double& width) {
@@ -43,14 +42,35 @@ void displayProperties(double perimeter, double area)
 
 int main() {
     double length, width, perimeter, area;
+    int choice;
 
-    getLengthWidth(length, width);
+    do {
+        cout << "\nRectangle Properties Menu" << endl;
+        cout << "1. Calculate Rectangle Properties" << endl;
+        cout << "2. Quit" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
 
-    perimeter = calcPerimeter(length, width);
+        if(choice == 1) {
 
-    area = calcArea(length, width);
 
-    displayProperties(perimeter, area);
+            getLengthWidth(length, width);
+
+            perimeter = calcPerimeter(length, width);
+
+            area = calcArea(length, width);
+
+            displayProperties(perimeter, area);
+        }
+        else if(choice == 2) {
+            cout << "Thank you! Goodbye!" << endl;
+        }
+
+        else {
+            cout << "Invalid choice. Try again." << endl;
+        }
+
+    } while(choice != 2);
 
     return 0;
 
